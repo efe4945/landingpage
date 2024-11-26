@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --font-family: "Roboto", serif;
+    --header-footer-dark-bg: #1F2937;
+    --hero-main-txt-font-size: 38px;
+    --hero-main-desktop-txt-font-size: 48px;
+    --hero-main-txt-color: #F9FAF8;
+    --hero-main-txt-weight: 900;
+    --hero-secondary-txt-size: 18px;
+    --hero-secondary-txt-color: #E5E7EB;
+    --navbar-txt-size: 38px;
+    --navbar-table-txt-size: 28px;
+    --navbar-desktop-txt-size: 18px;
+    --navbar-txt-color: #E5E7EB;
+    --logo-font-size: 48px;
+    --logo-desktop-font-size: 24px;
+    --logo-color: #F9FAF8;
+    --button-color: #3882F6;
+    --cto-bg-color: #3882F6;
+    --info-header-txt-size: 36px;
+    --info-header-txt-color: #1F2937;
+    --info-header-txt-weight: 900;
+    --quote-bg-color: #E5E7EB;
+    --quote-txt-size: 24px;
+    --quote-txt-color: #1F2937;
+    --quote-txt-style: light italic;
+}
+.grandad-wrapper-flex {
+    display: flex;
+    flex-flow: row wrap;
+}
+.header-bg-color {
+    flex: 1 1 100%;
+    background: var(--header-footer-dark-bg);
+}
+.hero-bg-color {
+    flex: 1 1 100%;
+    background: var(--header-footer-dark-bg);
+}
+.info-bg-color {
+    flex: 1 1 100%;
+}
+.qt-bg-color{
+    flex: 1 1 100%;
+    background: var(--quote-bg-color);
+}
+.cto-bg-color{
+    flex: 1 1 100%;
+}
+.footer-bg-color{
+    flex: 1 1 100%;
+    background: var(--header-footer-dark-bg);
+}
+.site-center-wrapper {
+    max-width: 89%;
+    margin: 0 auto;
+}
+.wrapper nav-dad-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    padding: 1rem 0;
+    flex-basis: 100%;
+}
+nav section {
+    flex:1 1 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav section p {
+    color: var(--logo-color);
+    font-size: var(--logo-font-size);
+}
+nav ul {
+    flex: 1 1  100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+}
+nav ul a {
+    color: var(--navbar-txt-color);
+    font-size: var(--navbar-txt-size);
+    
+}
+.hero-main-txt p {
+    font-size: var(--hero-main-txt-font-size);
+    color: var(--hero-main-txt-color);
+    text-align: center;
+    
+}
+.secondary-txt p {
+    font-size: var(--hero-secondary-txt-size);
+    color: var(--hero-secondary-txt-color);
+}
+.hero-box {
+    background: gray;
+    color: var(--hero-secondary-txt-size);
+    font-size: var(--hero-secondary-txt-size);
+    max-width: 600px;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-dad-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hero-colum {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+    
+    
+}
+.hero-main-txt-wrapper {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    
+    
+}
+.hero-main-txt-wrapper .secondary-txt {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    
+}
+.secondary-txt {
+    flex: 1 1 50%;
+    display: flex;
+    gap: 1rem;
+}
+.secondary-txt p {
+    text-align: justify;
+}
+.secondary-txt button {
+    background: var(--button-color);
+    color: var(--hero-main-txt-color);
+    border: var(--button-color) solid 1px;
+    border-radius: 9px;
+    padding: 1rem 0 2rem 0;
+    font-size: 2rem;
+}
+.info-hder-txt {
+    font-size: var(--info-header-txt-size);
+    color: var(--info-header-txt-color);
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+.info-hder-txt p {
+    text-align: center;
+}
+.info-kid-list-flex {
+    font-size: var(--hero-secondary-txt-size);
+    color: var(--quote-txt-color);
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+.info-kid-list-flex figure {
+    flex-basis: 200px;
+    text-align: center;
+}
+.info-kid-list-flex img {
+    width: 200px;
+    height: 200px;
+    border: 2px solid var(--cto-bg-color);
+    border-radius: 11px;
+}
+.site-center-wrapper .info-colum {
+    display: flex;
+    flex-flow: row wrap;
+}
+.qt-colum {
+    display: flex;
+}
+.qt-wrapper {
+    display: flex;
+    
+}
+.qt-wrapper figure {
+    font-size: var(--quote-txt-size);
+
+}
+
+.qt-wrapper figure figcaption {
+    font-style: var(--quote-txt-style);
+    font-size: var(--quote-txt-size);
+    justify-self: end;
+}
+.cto-colum {
+    display: flex;
+    flex-direction: column;
+    color: var(--hero-main-txt-color);
+    border-radius: 11px;
+}
+.cto-flex-dad {
+    display: flex;
+    flex-flow: row wrap;
+    background: var(--button-color);
+    gap: 1rem;
+    padding: 2rem;
+    border-radius: 11px;
+}
+.cto-flex-dad section {
+    flex: 1 1 100%;
+    display: flex;
+    flex-direction: column;
+}
+.cto-flex-dad section button {
+    width: 100%;
+    background: var(--button-color);
+    color: var(--hero-main-txt-color);
+    border: var(--hero-main-txt-color) 1px solid;
+    border-radius: 9px;
+    padding: 1rem ;
+    font-size: 2rem;
+}
+.footer-colum {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--navbar-txt-color);
+    font-size: var(--hero-secondary-txt-size);
+    padding: 2rem;
+}
+.footer-colum p {
+    text-align: center;
+}
+.cto-padding, .qt-padding, .info-padding {
+    padding: 2rem;
+}
+.cto-head {
+    font-size: 1.5rem;
+    text-align: center;
+}
+nav ul li:hover, nav ul li:active {
+    background: hsla(220, 13%, 91%, 0.637);
+    
+}
+@media screen and (min-width: 768px) {
+    nav {
+        gap: 1rem;
+    }
+    nav ul {
+        justify-content: space-between;
+    }
+    nav ul li a {
+        font-size: var(--navbar-table-txt-size);
+    }
+    section .hero-colum{
+    padding: 0;    
+    flex-flow: column wrap;
+    width: 100%;
+    margin: 2.5rem 0 4rem 0;
+    
+        
+    }
+    .hero-main-txt-wrapper, .hero-box {
+        max-width: 100%;
+
+    }
+    .cto-bottom {
+        text-align: center;
+    }
+    
+}
+@media screen and (min-width: 1280px) {
+    nav section p {
+        color: var(--logo-color);
+        font-size: var(--logo-desktop-font-size);
+    }
+    nav ul li a {
+        font-size: var(--navbar-desktop-txt-size);
+        
+    }
+    nav section {
+        flex: 1 1 30%;
+        justify-content: space-between;
+    
+    }
+    nav ul {
+        flex: 1 1 58%;
+    
+    }
+    nav ul {
+        justify-content: end;
+        gap: 1rem;
+    }
+    section .hero-colum{
+        padding: 0;    
+        flex-flow: row wrap;
+        width: 100%;
+        gap: 3rem;
+        }
+    section .hero-colum .hero-main-txt-wrapper{
+        flex:1 1 40%;
+               
+            }
+    section .hero-colum .hero-box{
+        flex:1 1 40%;
+               
+            }
+    .hero-main-txt p {
+        text-align: start;
+        font-size: var(--hero-main-desktop-txt-font-size);
+                
+        }
+        .hero-main-txt-wrapper {
+            gap: .5rem;
+        }
+        .secondary-txt p {
+            font-size: var(--navbar-desktop-txt-size);
+            max-width: 80%;
+        }
+        .secondary-txt button {
+            max-width: 30%;
+            padding: .7rem 0;
+
+        }
+        .info-kid-list-flex {
+            max-width: 90%;
+            margin: 0 auto;
+        }
+        .qt-padding figure{
+            max-width: 70%;
+            margin: 0 auto;
+        }
+        .info-kid-list-flex {
+        
+            justify-content: center;
+        }
+        .cto-flex-dad section {
+            flex: 1 1 50%;
+            
+        }
+        .cto-flex-dad .button-wrapper {
+            max-width: 20%;
+        }
+        .cto-head, .cto-bottom {
+            text-align: start;
+        }
+
+        
+}
+
